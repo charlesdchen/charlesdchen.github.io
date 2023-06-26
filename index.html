@@ -22,7 +22,7 @@
               <p style="text-align:center">
                 <name>Charles D. Chen</name>
               </p>
-              <p>I am a research scientist at Washington University in St. Louis. I did my PhD in <a href="https://engineering.wustl.edu/academics/programs/imaging-science/index.html">Imaging Science</a> and was funded by the <a href="http://www.nsfgrfp.org">NSF GRFP</a> and <a href="https://reporter.nih.gov/search/An_ALKKVgky5g8NGE8mycA/project-details/9489557">Knight ADRC T32</a>.
+              <p>Currently I study how to evaluate and improve the reliability of MRI and PET imaging techniques for Alzheimer disease through comparisons with gold standards such as neuropathology and visual reads. I did my PhD in <a href="https://engineering.wustl.edu/academics/programs/imaging-science/index.html">Imaging Science</a> at Washington University in St. Louis and was funded by the <a href="http://www.nsfgrfp.org">NSF GRFP</a> and <a href="https://reporter.nih.gov/search/An_ALKKVgky5g8NGE8mycA/project-details/9489557">Knight ADRC T32</a>.
               </p>
               <p style="text-align:center">
                 <a href="mailto:cdchen@wustl.edu">Email</a> &nbsp/&nbsp
@@ -41,9 +41,9 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>My current research</heading>
+              <heading>Some research I am doing as a postdoctoral fellow (2023)</heading>
               <p>
-                Currently I am working on deep learning approaches to quantify large amounts of microscopy and neuroimaging data.
+                I am working on a new project in the DIAN-TU-001 clinical trial to characterize the consequences of anti-amyloid-β drugs on the brain by using amyloid-β plaque, tau tangle, astrocyte, and microglia densities derived from histology.
               </p>
             </td>
           </tr>
@@ -60,11 +60,12 @@
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="">
           <papertitle>
-            Work in Progress
+            A microscopic view of the brain's response to anti-amyloid-β therapy in dominantly inherited Alzheimer disease
           </papertitle>
         </a>
         <br>
-        I am working on fine-tuning StarDist models within QuPath in order to segment a wider variety of cell types.
+        <strong>Charles D. Chen</strong>
+        for the DIAN-TU Study Team
       </td>
     </tr>
     
@@ -72,9 +73,12 @@
     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
       <tr>
         <td>
-          <heading>My research in graduate school (2018-2023)</heading>
+          <heading>Some research I did as a graduate student (2018-2023)</heading>
           <p>
-            In graduate school I moved again, this time from basic research on the structure and function of the brain to applied research on the reliability of biomarkers in monitoring neurodegenerative disease progression and drug treatment.
+            During my graduate studies at Washington University in St. Louis, I co-founded a committee and established a pipeline to transfer postmortem brain tissue and coordinate imaging-pathology studies between the Imaging and Neuropathology Cores of the Knight ADRC. This increased cooperation between the two cores allowed me to start a study comparing diffusion MRI cellularity predictions with cell densities derived from histology. I was also able to publish studies comparing amyloid-β and tau PET predictions with amyloid-β plaque and tau tangle densities derived from histology.
+          </p>
+          <p>
+            I also developed an algorithmic approach for finding optimal regions of interest and task-based cutoffs for Alzheimer disease biomarkers. I validated my approach by comparing my tau PET cutoff for biomarker positivity with visual reads as performed by a pair of radiologists. My algorithms along with their resultant ROIs and cutoffs are now being used in several studies at the Knight ADRC.
           </p>
         </td>
       </tr>
@@ -459,9 +463,12 @@
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr>
       <td style="padding:20px;width:100%;vertical-align:middle">
-        <heading>My research after college (2015-2018)</heading>
+        <heading>Some research I did after college (2015-2018)</heading>
         <p>
-          After college I moved from studying the structure of the brain to studying its function, specifically in the context of learning risks and rewards in an uncertain environment. I felt that studying how biological neurons encoded risks and rewards could inform how to design better artificial neural networks, similar to how my previous work studying axonal fiber directions in brain tissue informed the design of better tractography algorithms.
+          After college I moved from studying the structure of the brain to studying its function, specifically in the context of learning risks and rewards in an uncertain environment. I felt that studying how biological neurons encoded risks and rewards could inform how to design better artificial neural networks for reinforcement learning. At the time, there was a major breakthrough in using neural networks to learn how to play Atari games without human supervision by using <a href="https://www.nature.com/articles/nature14236">"only the pixels and the game score as inputs"</a>. However, when watching videos of how the neural network learned to play, I noticed it failed to score any points on the game "Montezuma's Revenge" and thus failed to learn anything at all.
+        </p>
+        <p>
+          I thought one way to remedy this was to add a "reward" signal for exploring the game environment to plan for the future instead of just relying on the final game score as the sole reward. Thus began my interest in using electrodes to measure a monkey's neuronal activity while it watched visual cues associated with different probabilities of future rewards. Interestingly, there <em>were</em> distinct neuronal signals associated with waiting for an uncertain reward (ramping) and receiving a reward with a low probability of occuring (post-stimulus spike), but I did not have time to determine how to incorporate these into a new reinforcement learning model.
         </p>
       </td>
       </tr>
@@ -516,7 +523,7 @@
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <tr>
         <td style="padding:20px;width:100%;vertical-align:middle">
-          <heading>My research in college (2011-2015)</heading>
+          <heading>Some research I did as an undergrad (2011-2015)</heading>
           <p>
             In college I worked on developing a way to estimate axonal fiber directions and cortical surfaces from brain tissue sections. I was given brain tissue, a microscope, and a stack of paper, and was asked to draw what I saw. This took a lot of time and I had trouble communicating my results.
           </p>
@@ -524,7 +531,7 @@
             I decided to digitize the tissue sections so I could directly share what I was seeing under the microscope. Then I decided to estimate axonal fiber directions and cortical surfaces first by manually annotating these features using Adobe Illustrator and later by semi-automatically annotating these features using a rudimentary tool I wrote in MATLAB to estimate axonal fiber directions using structure tensors and estimate cortical surfaces using B-splines. 
           </p>
           <p>
-            When comparing these microscopy estimates with diffusion MRI estimates of axonal fiber directions and cortical surfaces, I confirmed that microscopy and neuroimaging showed the greatest agreement in axonal fiber direction along the gyral crowns but the greatest discrepancy along the sulcal banks and fundi of the cortical surface. This work supported the idea of a "gyral bias" in diffusion MRI tractography and led to many follow-up studies working on developing new tractography algorithms.
+            When comparing these microscopy estimates with diffusion MRI estimates of axonal fiber directions and cortical surfaces, I confirmed that microscopy and neuroimaging showed the greatest agreement in axonal fiber direction along the gyral crowns but the greatest discrepancy along the sulcal banks and fundi of the cortical surface. This work supported the idea of a "gyral bias" in current diffusion tractography algorithms and motivated more research into developing new tractography algorithms.
           </p>
         </td>
       </tr>
