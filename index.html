@@ -465,10 +465,10 @@
       <td style="padding:20px;width:100%;vertical-align:middle">
         <heading>Some research I did after college (2015-2018)</heading>
         <p>
-          After college I moved from studying the structure of the brain to studying its function, specifically in the context of learning risks and rewards in an uncertain environment. I felt that studying how biological neurons encoded risks and rewards could inform how to design better artificial neural networks for reinforcement learning. At the time, there was a major breakthrough in using neural networks to learn how to play Atari games without human supervision by using <a href="https://www.nature.com/articles/nature14236">"only the pixels and the game score as inputs"</a>. However, when watching videos of how the neural network learned to play, I noticed it failed to score any points on the game "Montezuma's Revenge" and thus failed to learn anything at all.
+          In college I really wanted to study brain function, but never got the chance. After college, I had the opportunity to study brain function in the context of learning risks and rewards in an uncertain environment. I felt that studying how biological neurons encoded risks and rewards could inform how to design better artificial neural networks for reinforcement learning. At the time, there was a major breakthrough in using neural networks to learn how to play Atari games without human supervision by using <a href="https://www.nature.com/articles/nature14236">"only the pixels and the game score as inputs"</a>. However, when watching videos of how the neural network learned to play, I noticed it failed to score any points on the game "Montezuma's Revenge" and thus failed to learn anything at all.
         </p>
         <p>
-          I thought one way to remedy this was to add a "reward" signal for exploring the game environment to plan for the future instead of just relying on the final game score as the sole reward. Thus began my interest in using electrodes to measure a monkey's neuronal activity while it watched visual cues associated with different probabilities of future rewards. Interestingly, there <em>were</em> distinct neuronal signals associated with waiting for an uncertain reward (ramping) and receiving a reward with a low probability of occuring (post-reward spike), but I did not have time to determine how these could be incorporated into a new reinforcement learning model.
+          I thought one way to remedy this was to add a "reward" signal for exploring the game environment to plan for the future instead of just relying on the final game score as the sole reward. Thus began my interest in using electrodes to measure a monkey's neuronal activity while it watched visual cues associated with different probabilities of future rewards. Interestingly, there <em>were</em> distinct neuronal signals associated with waiting for an uncertain reward (pre-reward ramping) and receiving a reward with a low probability of occuring (post-reward spiking), but I couldn't quite piece together how these could be incorporated into a new reinforcement learning model.
         </p>
       </td>
       </tr>
@@ -525,13 +525,13 @@
         <td style="padding:20px;width:100%;vertical-align:middle">
           <heading>Some research I did as an undergrad (2011-2015)</heading>
           <p>
-            In college I worked on developing a way to estimate axonal fiber directions and cortical surfaces from brain tissue sections. I was given brain tissue, a microscope, and a stack of paper, and was asked to draw what I saw. This took a lot of time and I had trouble communicating my results.
+            In college I worked on developing a way to estimate axonal fiber directions and cortical surfaces from brain tissue sections. I was given brain tissue, a microscope, and a stack of paper, and was asked to draw what I saw. This took a lot of time.
           </p>
           <p>
-            I decided to digitize the tissue sections so I could directly share what I was seeing under the microscope. Then I decided to estimate axonal fiber directions and cortical surfaces first by manually annotating these features using Adobe Illustrator and later by semi-automatically annotating these features using a rudimentary tool I wrote in MATLAB to estimate axonal fiber directions using structure tensors and estimate cortical surfaces using B-splines. 
+            I decided to digitize the tissue sections so I wouldn't have to spend so much time drawing everything I saw under the microscope. Then I estimated axonal fiber directions and cortical surfaces by manually annotating them using Adobe Illustrator. But this still took a lot of time, so I wrote a MATLAB script to estimate axonal fiber directions using structure tensors and cortical surfaces using B-splines. 
           </p>
           <p>
-            When comparing these microscopy estimates with diffusion MRI estimates of axonal fiber directions and cortical surfaces, I confirmed that microscopy and neuroimaging showed the greatest agreement in axonal fiber direction along the gyral crowns but the greatest discrepancy along the sulcal banks and fundi of the cortical surface. This work supported the idea of a "gyral bias" in current diffusion tractography algorithms and motivated more research into developing new tractography algorithms.
+            When comparing these microscopy estimates with diffusion MRI estimates of axonal fiber directions and cortical surfaces, I confirmed that microscopy and diffusion MRI showed the greatest agreement in axonal fiber direction along the gyral crowns but the greatest discrepancy along the sulcal banks and fundi of the cortical surface. This work supported the idea that there was a "gyral bias" in diffusion MRI tractography and motivated the development of new tractography algorithms.
           </p>
         </td>
       </tr>
